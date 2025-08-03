@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    // Ini adalah baris penting untuk mengatasi error 'Build was configured to prefer settings repositories...'
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google() // PASTIKAN ADA BARIS INI
+        mavenCentral() // PASTIKAN ADA BARIS INI
+    }
+}
+rootProject.name = "EHealthyApp" // PASTIKAN NAMA PROYEK ANDA DISINI
+include ':app' // Sertakan modul 'app' Anda

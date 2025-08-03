@@ -1,0 +1,20 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    // Biarkan bagian ini sesuai default dari proyek baru Anda,
+    // Versi di sini mungkin sedikit berbeda tergantung Android Studio Anda (contoh: '8.2.0' atau '8.3.0')
+    id 'com.android.application' version '8.12.0' apply false
+    id 'com.android.library' version '8.12.0' apply false
+    // Jika ada baris 'id 'org.jetbrains.kotlin.android'', HAPUS SAJA jika Anda hanya menggunakan Java.
+    // id 'org.jetbrains.kotlin.android' version '1.9.0' apply false // <-- HAPUS BARIS INI JIKA ADA
+}
+
+// HAPUS *SELURUH* BLOK 'allprojects' JIKA ADA DI FILE INI!
+// Ini adalah penyebab konflik dengan settings.gradle yang baru.
+/*
+allprojects { // BLOK INI HARUS DIHAPUS DARI FILE build.gradle (Project: EHealthyApp) JIKA ADA
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+*/
